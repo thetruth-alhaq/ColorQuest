@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Color Quest logo">
+  <defs>
+    <!-- 3D rainbow blob body -->
+    <radialGradient id="body" cx="38%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#fff3b0"/>
+      <stop offset="18%" stop-color="#ffd93d"/>
+      <stop offset="42%" stop-color="#ff9f1c"/>
+      <stop offset="72%" stop-color="#f94144"/>
+      <stop offset="100%" stop-color="#b5179e"/>
+    </radialGradient>
+    <radialGradient id="belly" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffe8f4" stop-opacity="0.55"/>
+    </radialGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="brush" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c9761e"/>
+      <stop offset="100%" stop-color="#8d4a08"/>
+    </linearGradient>
+    <linearGradient id="bristle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#43e9e0"/>
+      <stop offset="55%" stop-color="#3a86ff"/>
+      <stop offset="100%" stop-color="#5f2eea"/>
+    </linearGradient>
+    <linearGradient id="drop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f94144"/>
+      <stop offset="25%" stop-color="#f8961e"/>
+      <stop offset="50%" stop-color="#f9c74f"/>
+      <stop offset="75%" stop-color="#43aa8b"/>
+      <stop offset="100%" stop-color="#3a86ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <!-- ground shadow (3D anchor) -->
+  <ellipse cx="256" cy="452" rx="150" ry="26" fill="#1a0033" opacity="0.28" filter="url(#shadow)"/>
+
+  <!-- rainbow splash ring behind the hero -->
+  <g opacity="0.9">
+    <circle cx="256" cy="240" r="208" fill="none" stroke="url(#drop)" stroke-width="14" stroke-dasharray="42 26" stroke-linecap="round"/>
+  </g>
+
+  <!-- paint blob hero body: wobbly 3D blob -->
+  <path d="M256 92
+           C 330 92 396 142 410 214
+           C 424 286 388 358 316 388
+           C 244 418 158 396 118 336
+           C 78 276 88 188 140 138
+           C 172 106 214 92 256 92 Z"
+        fill="url(#body)"/>
+
+  <!-- paint drips off the blob -->
+  <path d="M140 330 q-6 40 8 52 q14 -10 6 -52 Z" fill="#f8961e"/>
+  <path d="M368 316 q10 34 -4 50 q-14 -12 -6 -50 Z" fill="#b5179e"/>
+
+  <!-- belly light -->
+  <ellipse cx="256" cy="300" rx="120" ry="82" fill="url(#belly)"/>
+
+  <!-- specular shine (the 3D pop) -->
+  <ellipse cx="190" cy="160" rx="72" ry="38" fill="url(#shine)" transform="rotate(-24 190 160)"/>
+
+  <!-- eyes: big, glossy, kid-friendly -->
+  <g>
+    <ellipse cx="216" cy="238" rx="34" ry="40" fill="#ffffff"/>
+    <ellipse cx="300" cy="238" rx="34" ry="40" fill="#ffffff"/>
+    <circle cx="224" cy="244" r="17" fill="#3d348b"/>
+    <circle cx="308" cy="244" r="17" fill="#3d348b"/>
+    <circle cx="228" cy="238" r="6" fill="#ffffff"/>
+    <circle cx="312" cy="238" r="6" fill="#ffffff"/>
+  </g>
+
+  <!-- blush -->
+  <ellipse cx="172" cy="284" rx="18" ry="11" fill="#ff70a6" opacity="0.8"/>
+  <ellipse cx="344" cy="284" rx="18" ry="11" fill="#ff70a6" opacity="0.8"/>
+
+  <!-- open happy mouth with tongue -->
+  <path d="M216 292 Q256 330 300 292 Q292 342 256 342 Q220 342 216 292 Z" fill="#7b1e3b"/>
+  <ellipse cx="256" cy="326" rx="24" ry="12" fill="#ff6d8d"/>
+
+  <!-- paintbrush in hand -->
+  <g transform="rotate(18 380 330)">
+    <rect x="368" y="250" width="26" height="112" rx="12" fill="url(#brush)"/>
+    <path d="M368 356 h26 l6 58 q-19 16 -38 0 Z" fill="url(#bristle)"/>
+    <circle cx="381" cy="432" r="10" fill="#43e9e0"/>
+  </g>
+
+  <!-- crown of paint drops = "make it happen" magic -->
+  <circle cx="140" cy="120" r="16" fill="#43e9e0"/>
+  <circle cx="384" cy="112" r="13" fill="#f9c74f"/>
+  <circle cx="432" cy="176" r="10" fill="#f94144"/>
+  <circle cx="96" cy="200" r="10" fill="#43aa8b"/>
+  <circle cx="256" cy="64" r="12" fill="#3a86ff"/>
+</svg>
