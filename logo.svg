@@ -45,7 +45,8 @@
     <circle cx="256" cy="240" r="208" fill="none" stroke="url(#drop)" stroke-width="14" stroke-dasharray="42 26" stroke-linecap="round"/>
   </g>
 
-  <!-- paint blob hero body: wobbly 3D blob -->
+  <!-- blob hero, scaled to leave room for fish + Mozi -->
+  <g transform="translate(56.3 52.8) scale(0.78)">
   <path d="M256 92
            C 330 92 396 142 410 214
            C 424 286 388 358 316 388
@@ -88,6 +89,7 @@
     <path d="M368 356 h26 l6 58 q-19 16 -38 0 Z" fill="url(#bristle)"/>
     <circle cx="381" cy="432" r="10" fill="#43e9e0"/>
   </g>
+  </g>
 
   <!-- crown of paint drops = "make it happen" magic -->
   <circle cx="140" cy="120" r="16" fill="#43e9e0"/>
@@ -97,7 +99,7 @@
   <circle cx="256" cy="64" r="12" fill="#3a86ff"/>
 
   <!-- reef clownfish buddy (left) -->
-  <g transform="translate(96 258)">
+  <g transform="translate(88 250) scale(1.35)">
     <polygon points="34,0 62,-20 62,20" fill="#ff8c42"/>
     <ellipse rx="42" ry="30" fill="#ff8c42"/>
     <path d="M-6 -28 L4 -30 L4 30 L-6 28 Z" fill="#ffffff"/>
@@ -111,7 +113,7 @@
   </g>
 
   <!-- blocky Mozi hero (right) -->
-  <g transform="translate(424 240)">
+  <g transform="translate(428 238) scale(1.4)">
     <rect x="-18" y="-24" width="36" height="32" rx="5" fill="#e8b07a"/>
     <rect x="-18" y="-24" width="36" height="11" rx="5" fill="#6b4a2e"/>
     <rect x="-11" y="-8" width="9" height="8" fill="#ffffff"/>
